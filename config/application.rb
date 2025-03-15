@@ -28,7 +28,7 @@ module SpreeStarter
     # Common ones are `templates`, `generators`, or `middleware`, for example.
     config.autoload_lib(ignore: %w(assets tasks))
     config.active_record.yaml_column_permitted_classes = [Symbol]
-    config.active_record.yaml_column_permitted_classes < BigDecimal
+    config.active_record.yaml_column_permitted_classes << BigDecimal
 
     # Configuration for the application, engines, and railties goes here.
     #
